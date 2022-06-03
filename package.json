@@ -1,0 +1,23 @@
+{
+  "name": "bzznb_tech-interview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seungwanHam/Bzznb_Tech-Interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seungwanHam/Bzznb_Tech-Interview/issues"
+  },
+  "homepage": "https://github.com/seungwanHam/Bzznb_Tech-Interview#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
