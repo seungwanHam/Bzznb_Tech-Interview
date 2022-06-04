@@ -5,15 +5,17 @@ const app = express();
 
 const PORT = 5100;
 
-app.get("/:epoch_seconds", function (req, res, body) {
+app.get("/:epoch_seconds", function (req, res) {
   const { epoch_seconds } = req.params;
   const epoch_to_string = convert.epoch_to_ISOString(epoch_seconds);
+  // res.writeHead(200, "Current password does not match");
+  const msg = res.stausCode == 200 || 304 ? "OK" : "nop";
   const data = {
     status: res.statusCode,
-    message: "OK",
+    message: msg,
     data: epoch_to_string,
   };
-  res.json(data);
+  res.send(data);
 });
 
 app.use(express.static("public"));
