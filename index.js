@@ -17,7 +17,7 @@ app.get("/:epoch_seconds", function (req, res) {
     message: msg,
     data: epoch_to_string,
   };
-  res.send(result);
+  res.send(JSON.stringify(result, null, 2));
 });
 
 app.use(express.static("public"));
